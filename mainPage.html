@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Food Nutrition Detector</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Food Nutrition Detector</h1>
+        <form id="barcode-form">
+            <label for="search-input">Masukan Product Barcode:</label>
+            <input type="text" id="search-input" placeholder="Masukkan nomor barcode atau nama produk" required>
+            <div class="eg-Tutor">
+                <p> contoh nomor pada barcode: </p>
+                <img src="numbers.png" alt="barcode" width="100rem">
+            </div>
+            <button type="submit">cek nutrisi</button>
+        </form>
+        <div id="result">
+            <q><span style="color: rgb(10, 10, 131);">* jika terasa lama, tunggu beberapa saat</span></q><br><br>
+            <h2>Informasi nutrisi</h2>
+            <p id="product-name"></p>
+            <p id="calories"></p>
+            <p id="protein"></p>
+            <p id="carbohydrates"></p>
+            <p id="suggar"></p>
+            <p id="nutrition"></p>
+        </div>
+    </div>
+    <script src="main.js"></script>
+</body>
+</html>
